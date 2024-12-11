@@ -1,0 +1,155 @@
+/* Configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #989c94;
+    color: #333;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #989c94;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px; /* Añadido un espaciado suave */
+}
+
+section {
+    scroll-margin-top: 50px; /* Igual o mayor que la altura del navbar */
+}
+
+nav .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav .logo-text {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezado */
+header.hero {
+    height: 100vh;
+    margin-top: 0px; /* Asegura que el header no quede oculto por el nav */
+    background-color: #58a3b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;   /* La imagen ocupa todo el ancho */
+    height: 100vh;  /* La altura de la imagen será un 80% de la altura de la ventana */
+    object-fit: cover;  /* Hace que la imagen cubra el área sin distorsionarse */
+}
+
+.slider img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+.hero-text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+#comodidadesCarousel img {
+    height: 450px; /* Ajusta la altura según lo que necesites */
+    object-fit:contain; /* Mantiene la proporción de la imagen y recorta si es necesario */
+    border-radius:15px;
+}    
+
+/* Pie de página */
+footer {
+    background-color: #989c94;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.modal-content h3, .modal-content p {
+    margin: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+

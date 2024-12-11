@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si Viaje Domos & Glamping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light  shadow fixed-top ">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./images/logo.jpg" alt="logo" class="me-2" style="width: 40px; height: 40px; border-radius: 50%;">
+                <span class="fw-bold">Si Viaje Domos & Glamping</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#glampings">Glampings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comodidades">Comodidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de inicio con el slider -->
+    <header class="hero position-relative text-center text-white d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div id="carouselExampleIndicators" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/domo-dia2.jpg" class="d-block w-100" alt="Glamping 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/domo-afuera.jpg" class="d-block w-100" alt="Glamping 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/domo-dia.jpg" class="d-block w-100" alt="Glamping 3">
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute text-center">
+            <h1 class="display-4 fw-bold">¡Vive la naturaleza como nunca antes!</h1>
+            <p class="fs-5">Escoge tu glamping ideal y desconéctate del mundo por una noche.</p>
+        </div>
+    </header>
+
+    <!-- Sección de glampings -->
+    <section id="glampings" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Elige tu Glamping</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="./images/bali/FullSizeRender-3.jpg" class="card-img-top" alt="Domo Bali">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Domo Bali</h3>
+                            <p class="card-text">Un paraíso íntimo que inspira paz. En Bali, desconecta y vive la naturaleza con toques exóticos y todas las comodidades.</p>
+                            <button class="btn btn-primary" onclick="mostrarInfo('Domo Bali', 'Cuenta con todas estas comodidades:Ropa de cama, Amenities, Toallas toallones, Deck Privado, Hidromasajes exterior (Temp Ambiente), Red de Descanso, Asador Privado, Toallon de PILETA, WIFI, SMART TV, Estufa TROMEN, Frigobar, Baño Privado, Bicicletas MTB con Reserva previa, Biblioteca de campo, MINIRAMP (skate, rollers, patín), Cochera Techada Privada, 4000mt2 de monte nativo!, Hamacas, Fogón. También contamos con el quincho en Común COSTA RICA en el cual tienen acceso a Cocina equipada, Heladera y Parrilla estilo Fogonero. Tu estadía incluye: 🍹Recepción de Bienvenida 🍾Champagne para Brindis 🥐Desayuno seco')">Más Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="./images/montañita/FullSizeRender-8.jpg" class="card-img-top" alt="Domo Montañita">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Domo Montañita</h3>
+                            <p class="card-text">Refugio de calma y encanto. En Montañita, disfruta de momentos únicos bajo el cielo estrellado, rodeado de confort y serenidad.</p>
+                            <button class="btn btn-primary" onclick="mostrarInfo('Domo Montañita', 'Cuenta con todas estas comodidades: Ropa de cama, Toallas toallones, HIDROMASAJES Privado y al aire libre (Temp Ambiente), Deck + Red de descanso, Toallon de PILETA, WIFI<, SMART TV, FRIGOBAR, Estufa TROMEN, JACUZZI interno, Baño Privado, Bicicleta MTB con Reserva Previa, Biblioteca de campo, MINIRAMP (skate, rollers, patín), Cochera Techada, 4000mt2 de monte nativo!, Hamacas, Fogón / Parrilla. También contamos con el quincho en Común COSTA RICA en el cual tienen acceso a Cocina equipada, Heladera y Parrilla. Tu estadía incluye: 🍹Recepción de Bienvenida 🍾Champagne para Brindis 🥐Desayuno seco')">Más Información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="./images/alaska/FullSizeRender.jpg" class="card-img-top" alt="Domo Alaska">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Domo Alaska</h3>
+                            <p class="card-text">Aventura y calidez en perfecta armonía. En Alaska, combina modernidad y rusticidad para una experiencia única.</p>
+                            <button class="btn btn-primary" onclick="mostrarInfo('Domo Alaska', 'Cuenta con todas estas comodidades: Ropa de cama, Toallas toallones, JACUZZI Privado al aire libre (Temp Ambiente), Deck + Red de descanso, Toallon de PILETA, WIFI, SMART TV, Estufa TROMEN, Baño Privado, Bañera, Cocina equipada, Bicicleta MTB con Reserva Previa, Biblioteca de campo, MINIRAMP (skate, rollers, patín), Cochera Techada, 4000mt2 de monte nativo!, Hamacas, Fogón / Parrilla. Tu estadía incluye: 🍹Recepción de Bienvenida 🍾Champagne para Brindis 🥐Desayuno seco')">Más Información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contenedor para mostrar la información -->
+    <div id="informacion" class="mt-4"></div>
+    
+    
+
+<!-- Ventana emergente -->
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarInfo()">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalText"></p>
+    </div>
+</div>
+
+  
+
+    <section id="comodidades" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Descubre las Comodidades de Nuestro Predio</h2>
+            <div class="row align-items-center">
+                <!-- Carrusel de imágenes -->
+                <div class="col-md-6">
+                    <div id="comodidadesCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/1.jpg" class="d-block w-100 rounded" alt="Comodidad 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/2.jpg" class="d-block w-100 rounded" alt="Comodidad 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/3.jpg" class="d-block w-100 rounded" alt="Comodidad 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/4.jpg" class="d-block w-100 rounded" alt="Comodidad 4">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#comodidadesCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#comodidadesCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Texto descriptivo -->
+                <div class="col-md-6">
+                    <p class="text-muted fs-5">
+                        En nuestro predio podrás disfrutar de increíbles comodidades pensadas para que tu experiencia sea inolvidable:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">🚴‍♀️ <strong>Bicicleta MTB</strong> con reserva previa</li>
+                        <li class="mb-2">📚 <strong>Biblioteca de campo</strong></li>
+                        <li class="mb-2">🛹 <strong>MINIRAMP</strong> para skate, rollers y patín</li>
+                        <li class="mb-2">🚗 <strong>Cochera techada</strong></li>
+                        <li class="mb-2">🌳 <strong>4000m² de monte nativo</strong></li>
+                        <li class="mb-2">⛺ <strong>Hamacas</strong> y zonas de descanso</li>
+                        <li class="mb-2">🔥 <strong>Fogón / Parrilla</strong></li>
+                    </ul>
+                    <p class="text-muted fs-5">
+                        Además, podrás disfrutar del quincho en común <strong>COSTA RICA</strong>, equipado con cocina, heladera y parrilla.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección de reservas -->
+    <section id="reservas" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-start">
+                <!-- Formulario de reserva -->
+                <div class="col-md-6">
+                    <h3 class="text-center mb-3">Haz una Reserva</h3>
+                    <form id="form-reserva" class="mx-auto" style="max-width: 100%; height: 100%;" onsubmit="enviarWhatsApp(event)">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha-desde" class="form-label">Fecha de Ingreso:</label>
+                            <input type="date" id="fecha-desde" name="fecha-desde" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha-hasta" class="form-label">Fecha de Salida:</label>
+                            <input type="date" id="fecha-hasta" name="fecha-hasta" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="glamping" class="form-label">Elige tu Glamping:</label>
+                            <select id="glamping" name="glamping" class="form-select" required>
+                                <option value="bosque">Montañita</option>
+                                <option value="lago">Alaska</option>
+                                <option value="montana">Bali</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Realizar Reserva</button>
+                    </form>
+                </div>
+                
+
+                <!-- Mapa -->
+                <div class="col-md-6">
+                    <h3 class="text-center mb-3">Ubícanos</h3>
+                    <div class="map-container" style="height: 380px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.7034436219633!2d-64.59022442362655!3d-31.367161793874885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6f3d950ac465%3A0x8ba649220df704c8!2sSi%20Viaje%20Domos%20%26%20Glamping!5e0!3m2!1ses!2sar!4v1733878231390!5m2!1ses!2sar" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-4 text-black text-center">
+        <p>&copy; 2024 Si Viaje Domos & Glamping | Todos los derechos reservados</p>
+    
+        <!-- Enlaces a las redes sociales con los íconos -->
+        <div>
+            <a href="https://wa.me/1234567890" target="_blank" class="mx-2">
+                <i class="fab fa-whatsapp fa-2x" style="color: #000000;"></i> <!-- Icono de WhatsApp -->
+            </a>
+            <a href="https://www.facebook.com/tuPagina" target="_blank" class="mx-2">
+                <i class="fab fa-facebook fa-2x" style="color: #000000;"></i> <!-- Icono de Facebook -->
+            </a>
+            <a href="https://www.instagram.com/tuUsuario" target="_blank" class="mx-2">
+                <i class="fab fa-instagram fa-2x" style="color: #000000;"></i> <!-- Icono de Instagram -->
+            </a>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
