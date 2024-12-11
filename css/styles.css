@@ -152,4 +152,6 @@ footer {
     font-size: 30px;
     cursor: pointer;
 }
-
+.brand-text {
+    font-size: 1.15rem;
+}
